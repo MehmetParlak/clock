@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="clock.js">
+
+  </script>
+</head>
+
+<body>
+  <div class="analog">
+
+    <svg height="140" width="140">
+
+
+      <circle id="face" cx="70" cy="70" r="65"></circle>
+      <text id="month" x="53" y="45" stroke="white">5 FEB</text>
+
+      <text id="digi" x="39" y="100" stroke="white">18:04:22</text>
+
+
+      <line id="h-hand" x1="70" y1="70" x2="70" y2="38"></line>
+      <line id="m-hand" x1="70" y1="70" x2="70" y2="20"></line>
+      <line id="s-hand" x1="70" y1="70" x2="70" y2="12"></line>
+      <line id="s-tail" x1="70" y1="70" x2="70" y2="56"></line>
+
+      <text x="62" y="18" stroke="white">12</text>
+      <text x="126" y="76" stroke="white">3</text>
+      <text x="66" y="130" stroke="white">6</text>
+      <text x="7" y="76" stroke="white">9</text>
+
+
+
+    </svg>
+
+    <div class="time-text">
+
+      <span id="hr">00</span>
+      <span>:</span>
+      <span id="mi">00</span>
+      <span>:</span>
+      <span id=sec>00</span>
+      <span id="suffix">--</span>
+
+
+    </div>
+
+    <div id="bnm"> Hello</div>
+
+  </div>
+
+<div id="deniz">
+  Selam Gencler
+</div>
+<button id="inc" type="button" name="inc" onclick="incrementTime()">Increment</button>
+<button id="dec" type="button" name="dec" onclick="returntime(2,0,1)">Decrement</button>
+<button id="auto" type="button" name="auto" onclick="autoTime()">Auto</button>
+
+
+</body>
+
+</html>
